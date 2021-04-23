@@ -1,0 +1,12 @@
+#!name=TikTok Unblock
+#!desc=Remove TikTok's regional restrictions.
+#!system=ios
+
+[URL Rewrite]
+(?<=_region=)CN(?=&) url 307 US
+(?<=_region1=)CN(?=&) url 307 US
+(?<=&app_version=)16..(?=.?.?&) url 307 1
+(?<=\?version_code=)16..(?=.?.?&) url 307 1
+
+[MITM]
+hostname = %APPEND% *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com, *.ipstatp.com.com, *.tiktokcdn.com, *.ibytedtos.com

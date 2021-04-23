@@ -1,2 +1,15 @@
-title: anhk
-author: anhk
+markdown: kramdown
+permalink: /:title.html
+url: https://blog.ir0.cn
+lsi: true
+rouge: true
+safe: true
+
+# presonal config
+title: 春江水暖Ya先知
+feed: /feed.xml
+
+author:
+  name: 安宏奎
+  nickname: Mr.Handsome
+  email: anhk@ir0.cn

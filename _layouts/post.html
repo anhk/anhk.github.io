@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="/media/img/favicon.ico" />
+    <link rel="alternate" title="春江水暖Ya先知" type="application/atom+xml" href="{{site.feed}}" />
+    <link href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/media/css/style.css" />
+
+    <!-- hightlight -->
+    <link href="//apps.bdimg.com/libs/highlight.js/9.1.0/styles/default.min.css" rel="stylesheet">
+
+    <!-- 评论 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="//cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="//cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+    <title>{{page.title}}</title>
+  </head>
+  <body>
+    <div id="clickload">假装异步加载中...</div>
+    <div id="wrap">
+        {% include header.html %}
+        {% include post.html %}
+        {% include footer.html %}
+    </div>
+    <script type="text/javascript" src="/media/js/base.js"></script>
+    <script type="text/javascript" color="255,0,0" opacity="0.3" count="99" src="//cdn.jsdelivr.net/npm/canvas-nest.js@1.0.0/canvas-nest.min.js"></script>
+
+    <!-- hightlight -->
+    <script src="//apps.bdimg.com/libs/highlight.js/9.1.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- md5 for gitalk -->
+    <script type="text/javascript" src="{{site.baseurl}}/media/js/md5.min.js"></script>
+    
+    <!-- 评论 -->
+    <script type="text/javascript">
+        const gitalk = new Gitalk({
+            clientID: '505518378f10d5ffb97f',
+            clientSecret: '0f7272f27a12acf29b73e41ad14c786828d895bf',
+            repo: 'anhk.github.io',
+            owner: 'anhk',
+            admin: 'anhk',
+            id: md5('{{page.url}}'),
+            distractionFreeMode: false
+        })
+
+        gitalk.render('gitalk-container')
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+        <div id="header">
+            <header id="blog_title">
+                <h1><a href="/">{{site.title}}</a></h1>
+            </header>
+            <nav id="menu">
+                <ul class="header-nav">
+                    <li{% if page.url == "/" %} class="current"{% endif %}><a href="/">Home</a></li>
+                    <li{% if page.url == "/categories" %} class="current"{% endif %}><a href="/categories">Categories</a></li>
+                    <li><a href="https://github.com/anhk/anhk.github.io/issues" target="_blank">Issues</a></li>
+                    <li><a href="https://github.com/anhk" target="_blank">Github</a></li>
+                    <!--li{% if page.read %} class="current"{% endif %}><a href="/read">Read</a></li-->
+                    <li{% if page.about %} class="current"{% endif %}><a href="/about">About</a></li>
+                    <li><a href="{{site.feed}}" class="menu-rss" target="_blank"></a></li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </div>
