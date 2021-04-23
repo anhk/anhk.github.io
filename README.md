@@ -1,3 +1,3 @@
 #### home page
 
-It's my blog([https://blog.ir0.cn](http://blog.ir0.cn))
+It's my blog([https://ir0.cn](http://ir0.cn))

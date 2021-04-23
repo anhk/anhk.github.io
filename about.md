@@ -35,7 +35,7 @@ about: true
 #### 联系
 
 + <a href="https://github.com/anhk" target="_blank">github/anhk</a>
-+ [email/anhk](mailto:anhk@ir0.cn?subject=%E6%9D%A5%E8%87%AAblog.ir0.cn%E7%9A%84%E9%97%AE%E5%80%99)
++ [email/anhk](mailto:anhk@ir0.cn?subject=%E6%9D%A5%E8%87%AAir0.cn%E7%9A%84%E9%97%AE%E5%80%99)
 
 
 #### 您的支持是我强大的动力

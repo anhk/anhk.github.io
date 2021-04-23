@@ -10,7 +10,7 @@ category: [Kubernetes]
 
 ## 安装最新版本的kubeadm和docker-ce
 
-这里不在赘述了，看 [这篇文章](https://blog.ir0.cn/quick-install-kubernetes.html)
+这里不在赘述了，看 [这篇文章](https://ir0.cn/quick-install-kubernetes.html)
 
 
 

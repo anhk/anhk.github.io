@@ -1,6 +1,6 @@
 markdown: kramdown
 permalink: /:title.html
-url: https://blog.ir0.cn
+url: https://ir0.cn
 lsi: true
 rouge: true
 safe: true
