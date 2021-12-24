@@ -13,6 +13,18 @@ category: [Kubernetes]
 这里不在赘述了，看 [这篇文章](https://ir0.cn/quick-install-kubernetes.html)
 
 
+调整docker使用`cgroupdriver=systemd`
+
+```bash
+$ cat > /etc/docker/daemon.json << EOF
+{
+    "exec-opts": ["native.cgroupdriver=systemd"]
+}
+EOF
+
+$ systemctl restart docker
+```
+
 
 ## 国外站点上传镜像到dockerhub
 
@@ -76,3 +88,11 @@ chown $(id -u):$(id -g) $HOME/.kube/config
 kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 ```
 
+
+## kubernetes重置
+
+```bash
+kubeadm reset
+rm -rf /etc/kubernetes /etc/cni/net.d
+iptables -F && iptables -t nat -F && iptables -t mangle -F && iptables -X
+```
