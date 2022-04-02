@@ -45,6 +45,10 @@ $ sudo apt-get update
 $ sudo apt-get install golang-go
 ```
 
+如果报错 `add-apt-repository not found`，则需要安装
+```bash
+$ sudo apt install software-properties-common
+```
 
 
 如果 `ppa.launchpad.net` 比较卡的化，可以修改域名为：`https://launchpad.proxy.ustclug.org`；文件位置`/etc/apt/sources.list.d/longsleep-ubuntu-golang-backports-bionic.list `
