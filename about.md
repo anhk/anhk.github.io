@@ -40,4 +40,4 @@ about: true
 
 #### 您的支持是我强大的动力
 
-<img src="/media/img/great.jpg" alt="GreatJob" style="max-width: 120px; ">
+<!-- <img src="/media/img/great.jpg" alt="GreatJob" style="max-width: 120px; "> -->
