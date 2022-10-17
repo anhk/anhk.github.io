@@ -40,7 +40,7 @@ create database school;
 3. 创建表
 ```sql
 CREATE TABLE student (
-   s_id INT NOT NULL,
+   s_id SERIAL,
    s_name VARCHAR(64) DEFAULT NULL,
    s_birth TIMESTAMP DEFAULT NULL,
    s_addr VARCHAR(255) DEFAULT NULL,
@@ -48,6 +48,3 @@ CREATE TABLE student (
   PRIMARY KEY (s_id)
 ) ;
 ```
-
-
-
