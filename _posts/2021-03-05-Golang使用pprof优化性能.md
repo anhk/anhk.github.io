@@ -8,6 +8,7 @@ category: [Golang]
 
 <!--more-->
 
+# 进程启动/退出时输出pprof文件
 
 ```golang
 
@@ -38,6 +39,25 @@ func StartProfile() {
 	}
 }
 ```
+
+# 使用HTTP包输出pprof文件
+
+```go
+import _ "net/http/pprof"
+
+go http.ListenAndServe("0.0.0.0:8000", nil)
+```
+
+针对自定义Mux提供手动添加路由：
+```go
+r.HandleFunc("/debug/pprof/", pprof.Index)
+r.HandleFunc("/debug/pprof/cmdline", pprof.Cmdline)
+r.HandleFunc("/debug/pprof/profile", pprof.Profile)
+r.HandleFunc("/debug/pprof/symbol", pprof.Symbol)
+r.HandleFunc("/debug/pprof/trace", pprof.Trace)
+```
+
+# 生成svg图
 
 安装 `graphviz`
 ```bash
